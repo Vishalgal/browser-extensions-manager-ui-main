@@ -1,7 +1,6 @@
 import Card from "./Card";
 import FilterButton from "./filterButton";
 import { useLocalStorage } from "../hooks/useLocalStorage";
-import { useState } from "react";
 import {InitialData} from "./InitialData.js";
 
 export default function ({ isDark }) {
