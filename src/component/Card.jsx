@@ -10,7 +10,7 @@ export default function Card({
     onChange,
 }) {
     const [isOn, setIsOn] = useState(isActive);
-
+    console.log(image);
     return (
         <div
             className={`card flex flex-col justify-between p-4 border-[2px] rounded-2xl h-[186px] ${
