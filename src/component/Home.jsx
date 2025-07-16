@@ -1,5 +1,5 @@
 import Card from "./Card";
-import FilterButton from "./filterButton";
+import FilterButton from "./FilterButton";
 import { useLocalStorage } from "../hooks/useLocalStorage";
 import {InitialData} from "./InitialData.js";
 
