@@ -69,14 +69,14 @@ export default function ({ isDark }) {
                         }
                     })
                     .map((extension, i) => {
-                        function importImage(imagePath) {
-                            return new URL(imagePath, import.meta.url).href;
-                        }
+                        // function importImage(imagePath) {
+                        //     return new URL(imagePath, import.meta.url).href;
+                        // }
 
                         return (
                             <Card
                                 key={extension.name}
-                                image={importImage(extension.logo)}
+                                image={extension.logo}
                                 heding={extension.name}
                                 description={extension.description}
                                 isActive={extension.isActive}
