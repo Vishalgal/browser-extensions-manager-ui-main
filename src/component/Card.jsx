@@ -9,7 +9,6 @@ export default function Card({
     onRemove,
     onChange,
 }) {
-    console.log(image)
     const [isOn, setIsOn] = useState(isActive);
     return (
         <div

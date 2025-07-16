@@ -1,7 +1,6 @@
 import React from "react";
-import logo from "../assets/images/logo.svg";
 import moonIcon from "../assets/images/icon-moon.svg";
-import sunIcon from "../assets/images/icon-sun.svg";
+
 
 export default function Header({ them }) {
     const [isDark, setIsDark] = them;
@@ -11,7 +10,7 @@ export default function Header({ them }) {
                 isDark ? "bg-[hsl(226,25%,17%)]" : "bg-[hsl(200,60%,99%)]"
             } p-3 mx-auto max-w-6xl mb-10 flex justify-between items-center rounded-2xl`}
         >
-            <img src={logo} alt="Website Logo" />
+            <img src="./images/logo.svg" alt="Website Logo" />
             <button
                 className={`${
                     isDark ? "bg-[hsl(225,23%,24%)]" : "bg-[hsl(0,0%,93%)]"
@@ -23,7 +22,7 @@ export default function Header({ them }) {
                 onClick={() => setIsDark(!isDark)}
             >
                 <img
-                    src={isDark ? sunIcon : moonIcon}
+                    src={isDark ? "./images/icon-sun.svg" : "./images/icon-moon.svg"}
                     alt={`${isDark ? "Sun" : "Moon"} Icon`}
                 />
             </button>
