@@ -1,7 +1,7 @@
 import Card from "./Card";
 import FilterButton from "./FilterButton";
 import { useLocalStorage } from "../hooks/useLocalStorage";
-import {InitialData} from "./InitialData.js";
+import InitialData from "../assets/data.json";
 
 export default function ({ isDark }) {
     const [activeFilter, setActiveFilter] = useLocalStorage('activeFilter',"all");

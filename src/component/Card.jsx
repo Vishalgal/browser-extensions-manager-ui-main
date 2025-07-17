@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-
+import { useState } from "react";
 export default function Card({
     image,
     heding,
@@ -19,7 +18,7 @@ export default function Card({
             }`}
         >
             <div className="flex gap-4 items-flex-start">
-                <img src={image} alt="Card logo" className="self-start" />
+                <img src={image} alt="Card logo" />
                 <div>
                     <h3 className="text-xl font-bold">{heding}</h3>
                     <p className="text-[14px]">{description}</p>
